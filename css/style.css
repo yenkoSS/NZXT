@@ -59,6 +59,10 @@ body {
   list-style-type: none;
 }
 
+.nav-list li a {
+  color: black;
+}
+
 .nav-list-responsive {
   position: absolute;
   top: 0;
@@ -131,6 +135,18 @@ h2 {
   transform: translateY(100px);
   opacity: 0;
   transition: 200ms;
+  border-bottom: 4px solid purple;
+  width: fit-content;
+  margin-bottom: 10rem;
+}
+
+h2::before {
+  content: " ";
+  display: inline-block;
+  width: 4px;
+  height: 4rem;
+  background-color: purple;
+  margin-right: 10px;
 }
 
 .show {
@@ -152,7 +168,7 @@ h3 span {
 
 p {
   font-size: 1.6rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .text-bold {
@@ -307,14 +323,50 @@ footer {
   flex-direction: row;
 }
 
+.social-media-box a:not(:last-child) {
+  margin-right: 2rem;
+}
+
 .icon-socialmedia {
   height: 3rem;
   width: auto;
-  margin-left: 3rem;
 }
 
 quote {
   font-size: 1.3rem;
+}
+
+.section-roadmap {
+  padding: 10rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.card-roadmap {
+  padding: 5rem;
+  width: 80%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+}
+
+.roadmap-feature-box {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.dot-active {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: lime;
+  margin-right: 10px;
+}
+.dot-inactive {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(223, 223, 223);
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 576px) {
